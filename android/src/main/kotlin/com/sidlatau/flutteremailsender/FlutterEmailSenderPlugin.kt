@@ -134,7 +134,7 @@ class FlutterEmailSenderPlugin
                 intent.action = Intent.ACTION_SEND_MULTIPLE
                 intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, ArrayList(attachmentUris))
                 if (text != null) {
-                    intent.putCharSequenceArrayListExtra(Intent.EXTRA_TEXT, arrayListOf(text))
+                    intent.putExtra(Intent.EXTRA_TEXT, text)
                 }
             }
 
